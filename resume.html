@@ -1,0 +1,613 @@
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<title>Dinesh Saini</title>
+    <link  rel="shorcut icon"  type="x-icon"  href="file:///Users/mac/Downloads/steller/public_html/assets/imgs/25.jpg" >
+    
+<div class="resume">
+    
+    <link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            background: #585c68;
+            font-size: 14px;
+            line-height: 22px;
+            color: #555555;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .semi-bold {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .resume {
+            width: 800px;
+            height: auto;
+            display: flex;
+            margin: 50px auto;
+        }
+
+        .resume .resume_left {
+            width: 280px;
+            background: #0bb5f4;
+        }
+
+        .resume .resume_left .resume_profile {
+            width: 100%;
+            height: 280px;
+        }
+
+        .resume .resume_left .resume_profile img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .resume .resume_left .resume_content {
+            padding: 0 25px;
+        }
+
+        .resume .title {
+            margin-bottom: 20px;
+        }
+
+        .resume .resume_left .bold {
+            color: #fff;
+        }
+
+        .resume .resume_left .regular {
+            color: #b1eaff;
+        }
+
+        .resume .resume_item {
+            padding: 25px 0;
+            border-bottom: 2px solid #b1eaff;
+        }
+
+        .resume .resume_left .resume_item:last-child,
+        .resume .resume_right .resume_item:last-child {
+            border-bottom: 0px;
+        }
+
+        .resume .resume_left ul li {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .resume .resume_left ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .resume .resume_left ul li .icon {
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            color: #0bb5f4;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .resume .icon i,
+        .resume .resume_right .resume_hobby ul li i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .resume .resume_left ul li .data {
+            color: #b1eaff;
+        }
+
+        .resume .resume_left .resume_skills ul li {
+            display: flex;
+            margin-bottom: 10px;
+            color: #b1eaff;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .resume .resume_left .resume_skills ul li .skill_name {
+            width: 25%;
+        }
+
+        .resume .resume_left .resume_skills ul li .skill_progress {
+            width: 60%;
+            margin: 0 5px;
+            height: 5px;
+            background: #009fd9;
+            position: relative;
+        }
+
+        .resume .resume_left .resume_skills ul li .skill_per {
+            width: 15%;
+        }
+
+        .resume .resume_left .resume_skills ul li .skill_progress span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #fff;
+        }
+
+        .resume .resume_left .resume_social .semi-bold {
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        .resume .resume_right {
+            width: 520px;
+            background: #fff;
+            padding: 25px;
+        }
+
+        .resume .resume_right .bold {
+            color: #0bb5f4;
+        }
+
+        .resume .resume_right .resume_work ul,
+        .resume .resume_right .resume_education ul {
+            padding-left: 40px;
+            overflow: hidden;
+        }
+
+        .resume .resume_right ul li {
+            position: relative;
+        }
+
+        .resume .resume_right ul li .date {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .resume .resume_right ul li .info {
+            margin-bottom: 20px;
+        }
+
+        .resume .resume_right ul li:last-child .info {
+            margin-bottom: 0;
+        }
+
+        .resume .resume_right .resume_work ul li:before,
+        .resume .resume_right .resume_education ul li:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -25px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: 2px solid #0bb5f4;
+        }
+
+        .resume .resume_right .resume_work ul li:after,
+        .resume .resume_right .resume_education ul li:after {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: -21px;
+            width: 2px;
+            height: 115px;
+            background: #0bb5f4;
+        }
+
+        .resume .resume_right .resume_hobby ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .resume .resume_right .resume_hobby ul li {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #0bb5f4;
+            border-radius: 50%;
+            position: relative;
+            color: #0bb5f4;
+        }
+
+        .resume .resume_right .resume_hobby ul li i {
+            font-size: 30px;
+        }
+
+        .resume .resume_right .resume_hobby ul li:before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            right: -52px;
+            width: 50px;
+            height: 2px;
+            background: #0bb5f4;
+        }
+
+        .resume .resume_right .resume_hobby ul li:last-child:before {
+            display: none;
+        }
+    </style>
+
+<nav  class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img style="border-radius: 50%; height: 3  0px; width: 40PX;"
+                src="assets/imgs/25.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="- btn btn-primary rounded ml-4" href="components.html">Copmonents</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="margin-top: 100px ; display: flex;">
+    <div  class="resume_left">
+        <div class="resume_profile">
+            <img style="background-color: #9e9c9c;" src="assets/imgs/25.jpg" alt="profile_pic">
+        </div>
+        <div class="resume_content">
+            <div class="resume_item resume_info">
+                <div class="title">
+                    <p class="bold">DINESH SAINI</p>
+                    <p class="regular"> web Designer</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="data">
+                             India
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="data">
+                            +91 9785815211
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="data">
+                            dineshsaini
+                            79898@gmail.com
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fab fa-weebly"></i>
+                        </div>
+                        <div class="data">
+                            www.dineshsaini.com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_skills">
+                <div class="title">
+                    <p class="bold">skill's</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="skill_name">
+                            HTML
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 80%;"></span>
+                        </div>
+                        <div class="skill_per">80%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            CSS
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 78%;"></span>
+                        </div>
+                        <div class="skill_per">78%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            B5
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 75%;"></span>
+                        </div>
+                        <div class="skill_per">75%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            JS
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 18%;"></span>
+                        </div>
+                        <div class="skill_per">18%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            React
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 70%;"></span>
+                        </div>
+                        <div class="skill_per">70%</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_social">
+                <div class="title">
+                    <p class="bold">Social</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <div class="data">
+                            <p class="semi-bold">Facebook</p>
+                            <p>Dinesh Tanwar</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fab fa-twitter-square"></i>
+                        </div>
+                        <div class="data">
+                            <p class="semi-bold">Twitter</p>
+                            <p>Dinesh saini</p>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="icon">
+                            <i class="fa fa-instagram">
+                        </div>
+                        <div class="data">
+                            <p class="semi-bold">Instagram</p>
+                            <p>Dineshsaini.01@instagram</p>
+                        </div>
+                    </li> -->
+                    <li>
+                        <div class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="data">
+                            <p class="semi-bold">Linkedin</p>
+                            <p>Dinesh saini</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="resume_right">
+        <div class="resume_item resume_about">
+            <div class="title">
+                <p class="bold">About us</p>
+            </div>
+            <p>Enthusiastic and motivated web developer with a strong foundation in [mention relevant technologies or
+                languages such as HTML, CSS, JavaScript, etc.]. Eager to leverage my skills and passion for creating
+                dynamic, user-friendly websites while continuously expanding my knowledge in the ever-evolving field of
+                web development.</p>
+        </div>
+        <div class="resume_item resume_work">
+            <div class="title">
+                <p class="bold">Work Experience</p>
+            </div>
+            <ul>
+                <li>
+                    <!-- <div class="date">2013 - 2015</div> -->
+                    <div class="info">
+
+                        <p>Collaborated with senior developers to build responsive and user-friendly websites using
+                            HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- <div class="date">2015 - 2017</div> -->
+                    <div class="info">
+                        <!-- <p class="semi-bold">Lorem ipsum dolor sit amet.</p> -->
+                        <p>Assisted in the development and implementation of front-end features, including animations,
+                            navigation menus, and interactive forms.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- <div class="date">2017 - Present</div> -->
+                    <div class="info">
+                        <!-- <p class="semi-bold">Lorem ipsum dolor sit amet.</p> -->
+                        <p>Conducted thorough testing and debugging to ensure the functionality and compatibility of web
+                            applications across different browsers and devices.</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- <div class="date">2017 - Present</div> -->
+                    <div class="info">
+                        <!-- <p class="semi-bold">Lorem ipsum dolor sit amet.</p> -->
+                        <p>Participated in team meetings to discuss project requirements, progress, and potential optimizations.                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- <div class="date">2017 - Present</div> -->
+                    <div class="info">
+                        <!-- <p class="semi-bold">Lorem ipsum dolor sit amet.</p> -->
+                        <p>Demonstrated a strong commitment to learning and professional growth by actively seeking feedback and exploring new technologies and techniques.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="resume_item resume_education">
+            <div class="title">
+                <p class="bold">Education</p>
+            </div>
+            <ul>
+                <li>
+                    <div class="date">2020 - 2021</div>
+                    <div class="info">
+                        <p class="semi-bold">Board Of Secondary Education Rajasthan</p>
+                        <p>
+                            10th
+                            </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="date">2022 - 2023</div>
+                    <div class="info">
+                        <p class="semi-bold"> Board Of Secondary Education Rajasthan</p>
+<p>12th</p>                    </div>
+                </li>
+                <li>
+                    <div class="info">
+                        <p class="semi-bold mt-6"> i’m pursuing my graduation From University of Rajasthan</p>                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="resume_item resume_hobby">
+            <div class="title">
+                <p class="bold">Hobby</p>
+            </div>
+            <ul>
+                <li><i class="fas fa-book"></i></li>
+                <li><i class="fas fa-gamepad"></i></li>
+                <li><i class="fas fa-music"></i></li>
+                <li><i class="fab fa-pagelines"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<section id="contact" class="position-relative section">
+    <div class="container text-center">
+        <h6 class="subtitle">Contact</h6>
+        <h6 class="section-title mb-4">Get In Touch With Me</h6>
+
+        <div class="contact text-left">
+            <div class="form">
+                <h6 class="subtitle">Available 24/7</h6>
+                <h6 class="section-title mb-4">Get In Touch</h6>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="contact-message" id="" cols="30" rows="5" class="form-control"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-infos">
+                <div class="item">
+                    <i class="ti-location-pin"></i>
+                    <div class="">
+                        <h5>Location</h5>
+                        <p> 303805,Morija Chomu, Jaipur Rajasthan </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="ti-mobile"></i>
+                    <div>
+                        <h5>Phone Number</h5>
+                        <p><a href="(+91) 9785815211"> (+91) 9785815211</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="ti-email"></i>
+                    <div class="mb-0">
+                        <h5>Email Address</h5>
+                        <p><a href="gmail">dineshsaini79898@gmail.com    </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <!-- <iframe src="https://snazzymaps.com/embed/61257"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2048.9872262706185!2d75.78859768151094!3d27.156169587697967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dab2fd5a8a0c9%3A0xb92720e90d329ca2!2z4KSm4KS_4KSo4KWH4KS2IOCkpOCkguCkteCksA!5e0!3m2!1shi!2sin!4v1722320122069!5m2!1shi!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<!-- End of Contact Section -->
+
+<!-- Page Footer -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <p>Copyright
+                    <script>document.write(new Date().getFullYear())</script> &copy; <a
+                        href="http://www.devcrud.com" target="_blank">Dinesh Saini</a>
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div class="socials">
+                    <a class="social-item" href="https://www.facebook.com/share/kWnR15pNtd19JcX6/?mibextid=qi2Omg"><i style="margin-top: 12px;" class="fa fa-facebook"
+                            aria-hidden="true"></i>
+                        </i></a>
+                    <a class="social-item" href="https://www.instagram.com/dineshsaini.01/"><i style="margin-top: 12px;"  class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-item" href="javascript:void(0)"><i style="margin-top: 12px;"  class="fa fa-twitter"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a class="social-item" href="https://telegram.org/dl"><i style="margin-top: 12px;"  class="fa fa-telegram"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
